@@ -1,0 +1,18 @@
+{
+  "files.eol": "\n",
+  // vscode默认启用了根据文件类型自动设置tabsize的选项
+  "editor.detectIndentation": false,
+  // 重新设定tabsize
+  "editor.tabSize": 2,
+  // 把prettier设置为vscode默认的代码格式化工具
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "typescriptreact"],
+  "editor.codeActionsOnSave": {
+    // 使用eslint来fix，包括格式化会自动fix和代码质量检查会给出错误提示
+    "source.fixAll.eslint": true
+  },
+  // vue文件的默认格式化工具选择prettier
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
